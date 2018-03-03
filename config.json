@@ -1,0 +1,10 @@
+{
+  "public_site": {
+    "root_url": "https://www.zendesk.com/"
+  },
+  "private_url": {
+    "root_url": "https://taskqaeng.zendesk.com",
+    "username": "qaengtest@outlook.com",
+    "password": "qweASD!@#zxc579"
+  }
+}
