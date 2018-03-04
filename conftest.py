@@ -29,7 +29,6 @@ def app(request):
                               priv_url=parameters['private_url']['root_url'],
                               user=parameters['private_url']['username'],
                               password=parameters['private_url']['password'])
-        fixture.wd.get(fixture.pub_url)
         request.addfinalizer(fixture.destroy)
     return fixture
 

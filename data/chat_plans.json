@@ -1,0 +1,22 @@
+{
+  "lite": {
+    "annually": "0",
+    "monthly": "0",
+    "total_agents": "only 1"
+  },
+  "team": {
+    "annually": "14",
+    "monthly": "19",
+    "total_agents": "Unlimited"
+  },
+  "professional": {
+    "annually": "29",
+    "monthly": "35",
+    "total_agents": "Unlimited"
+  },
+  "enterprise": {
+    "annually": "59",
+    "monthly": "70",
+    "total_agents": "Unlimited"
+  }
+}
