@@ -2,7 +2,7 @@
 
 ## Overview
 Test assignment consists of a simple test automation project. [Zendesk](https://www.zendesk.com/) was selected as an application under test based on this two lists:
-- [Sites Using React]https://github.com/facebook/react/wiki/Sites-Using-React
+- [Sites Using React](https://github.com/facebook/react/wiki/Sites-Using-React)
 - [Top 32 Sites Built With ReactJS](https://medium.com/@coderacademy/32-sites-built-with-reactjs-172e3a4bed81)
 
 ## Implementation Details
