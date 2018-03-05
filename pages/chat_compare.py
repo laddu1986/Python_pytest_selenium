@@ -26,13 +26,11 @@ class ChatComparePage:
         else:
             raise ValueError('Unrecognized chat plan "%s"' % plan)
 
-        prices = []
         # get only 3 first cells which belong to "Zendesk Chat Pricing" section
         column_selector = 'tr:not(.compare-table-key):not(.compare-table-header) td:nth-of-type(%s) span' % column_number
         price_column = self.app.wd.find_elements_by_css_selector(column_selector)[:3]
 
-        for cell in price_column:
-            prices.append(cell.text)
+        prices = [cell.text for cell in price_column]
 
         # string slicing is needed to remove currency sign (it is user locale dependant)
         return Chat(yr_price=prices[0][1:], mnth_price=prices[1][1:], agents=prices[2])
