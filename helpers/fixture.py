@@ -30,8 +30,9 @@ class Application:
         WebDriverWait(self.wd, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, selector)))
 
     def navigate_to(self, url):
-        self.wd.get(url)
+        if self.wd.current_url != url:  # if URL is opened no need to open the same page
+            self.wd.get(url)
 
     def navigate_to_chat_compare_page(self):
         self.navigate_to(self.pub_url + self.chat_compare_relative_url)
-        self.wait_for_element_to_be_visible('.compare-table')  # wait for comparison table to be loaded
+        self.wait_for_element_to_be_visible('.compare-table')  # wait for comparison table to be visible
